@@ -83,19 +83,19 @@ const content = {
             {
                 title: "New Movies",
                 target: "/medt/new-movies",
-                image: "https://image.tmdb.org/t/p/original/aAgGrfBwna1nO4M2USxwFgK5O0t.jpg",
+                image: "https://image.tmdb.org/t/p/original/51vreLbrGwzAg4WRCHgitWz6Naw.jpg",
                 alt: "comming"
             },
             {
                 title: "Upcoming",
                 target: "/medt/upcoming",
-                image: "https://image.tmdb.org/t/p/original/j0xO6355h5HfvC425sWDT6tiBZM.jpg",
+                image: "https://image.tmdb.org/t/p/original/9dZ52zOs91RMgjjORoMIi6VGNLr.jpg",
                 alt: "comming"
             },
             {
                 title: "Classics",
                 target: "/medt/classics",
-                image: "https://image.tmdb.org/t/p/original/fMkfImQS9ZRRQbsKfeORnpyLMNL.jpg",
+                image: "https://image.tmdb.org/t/p/original/jILeJ60zPpIjjJHGSmIeY4eO30t.jpg",
                 alt: "comming"
             }
         ],

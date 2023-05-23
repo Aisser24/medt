@@ -59,18 +59,21 @@ header .desktop--ul {
 /* #endregion */
 
 /*#region Hero*/
-.slider--container img{
+
+.heroImage {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider--header {
-  position: absolute;
   text-align: center;
   color: white;
   font-size: 10vw;
   font-weight: bolder;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+
 }
 
 /* .darken {

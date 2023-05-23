@@ -2,6 +2,7 @@ import React from "react";
 import Flickity from "react-flickity-component";
 import content from "../../content";
 import { Link } from "react-router-dom";
+import { nanoid } from "nanoid";
 
 const flickityOptions = {
     initialIndex: 0,
@@ -17,15 +18,24 @@ function Hero() {
             <Flickity
                 className={'carousel'} // default ''
                 elementType={'div'} // default 'div'
-                options={flickityOptions}
-                
+                options={flickityOptions}  
             >
                 {
                      content.home.heroSection.map((item, index) => {
+                        const style = {
+                            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, .9)), url("${item.image}")`,
+                                backgroundRepeat: "noRepeat",
+                                backgroundAttatchment: "fixed",
+                                backgroundPosition: "center",
+                                backgroundSize: "cover",
+                        }
+
                         return (
-                            <div key={index} className="slider--container">
-                                <h2 className="slider--header"><Link to={item.target}>{item.title}</Link></h2>
-                                <img src={item.image} alt={item.alt} />
+                            <div key={nanoid()} className="slider--container">
+                                <div className="heroImage" style={style}>
+                                    <h2 className="slider--header"><Link to={item.target}>{item.title}</Link></h2>
+                                </div>
+                                {/* <img src={item.image} alt={item.alt} /> */}
                             </div>
                         )
                      })

@@ -1,7 +1,7 @@
 const content = {
 
     links: {
-        home: "/medt/home",
+        home: "/medt/",
         about: "/medt/about",
         new: "/medt/new-movies",
         upcoming: "/medt/upcoming",
@@ -12,23 +12,23 @@ const content = {
     navbar: {
         links: [
             {
-                target: "/medt/home",
+                target: "/medt/",
                 text: "Home"
             },
             {
-                target: "/about",
+                target: "/medt/about",
                 text: "About"
             },
             {
-                target: "/new-movies",
+                target: "/medt/new-movies",
                 text: "New Movies"
             },
             {
-                target: "/upcoming",
+                target: "/medt/upcoming",
                 text: "Upcoming"
             },
             {
-                target: "/classics",
+                target: "/medt/classics",
                 text: "Classics"
             }
         ],
@@ -104,7 +104,7 @@ const content = {
             title: "About Us",
             content: "Welcome to MovieInfo! We are passionate movie enthusiasts dedicated to providing you with comprehensive and up-to-date information about films. Whether you're a casual moviegoer or a die-hard cinephile, our website is designed to be your go-to resource for all things related to ...",
             buttonText: "Read More",
-            buttonTarget: contact
+            buttonTarget: "contact"
         },
 
         contactSection: {
@@ -178,27 +178,27 @@ const content = {
             {
                 id: 28,
                 name: "Action",
-                color: "#FF0000",
+                color: "#550000",
               },
               {
                 id: 12,
                 name: "Adventure",
-                color: "#00FF00",
+                color: "#3e593e",
               },
               {
                 id: 16,
                 name: "Animation",
-                color: "#0000FF",
+                color: "#464fa3",
               },
               {
                 id: 35,
                 name: "Comedy",
-                color: "#BBBB00",
+                color: "#1e6075",
               },
               {
                 id: 80,
                 name: "Crime",
-                color: "#FF00FF",
+                color: "#8a4185",
               },
               {
                 id: 99,
@@ -218,7 +218,7 @@ const content = {
               {
                 id: 14,
                 name: "Fantasy",
-                color: "#FFC0CB",
+                color: "#E36999",
               },
               {
                 id: 36,
@@ -228,12 +228,12 @@ const content = {
               {
                 id: 27,
                 name: "Horror",
-                color: "#FF4500",
+                color: "#9e2b00",
               },
               {
                 id: 10402,
                 name: "Music",
-                color: "#FFD700",
+                color: "#ab920f",
               },
               {
                 id: 9648,
@@ -243,12 +243,12 @@ const content = {
               {
                 id: 10749,
                 name: "Romance",
-                color: "#FF1493",
+                color: "#99398b",
               },
               {
                 id: 878,
                 name: "Science Fiction",
-                color: "#00CED1",
+                color: "#46a3a0",
               },
               {
                 id: 10770,

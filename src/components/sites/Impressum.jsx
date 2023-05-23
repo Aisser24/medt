@@ -39,7 +39,7 @@ function Impressum() {
                                 {
                                     content.impressum.termsOfService.terms.map(term => {
                                         return (
-                                            <li>
+                                            <li key={nanoid()}>
                                                 <h3>{term.title}</h3>
                                                 {
                                                     term.content.length > 1 ?

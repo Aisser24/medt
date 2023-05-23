@@ -1,6 +1,7 @@
 import React from "react"; 
 import content from "../../content";
 import { HashLink } from "react-router-hash-link";
+import { nanoid } from "nanoid";
 
 function Footer() {
     return (
@@ -9,7 +10,7 @@ function Footer() {
             {
                 content.footer.footerLinks.map(link => {
                     return (
-                        <HashLink smooth to={link.to} className="footerLink">
+                        <HashLink smooth to={link.to} className="footerLink" key={nanoid()}>
                             &nbsp;| {
                                 link.title
                             }

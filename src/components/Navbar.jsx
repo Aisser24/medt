@@ -21,7 +21,7 @@ function Navbar({ site }) {
 
     return (
         <header>
-            <Link to={"/"}>
+            <Link to={content.links.home}>
                 {
                     content.navbar.logo
                 }

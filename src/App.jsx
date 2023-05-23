@@ -6,18 +6,19 @@ import New from "./components/sites/New";
 import Upcoming from "./components/sites/Upcoming";
 import Classics from "./components/sites/Classics"; 
 import Impressum from "./components/sites/Impressum";
+import content from "../content";
 
 
 function App() {
     return (
         <div className="App">
             <Routes>
-                <Route path="/" Component={Home}/>
-                <Route path="/about" Component={About}/>
-                <Route path="/new-movies" Component={New}/>
-                <Route path="/upcoming" Component={Upcoming}/>
-                <Route path="/classics" Component={Classics}/>
-                <Route path="/impressum" Component={Impressum}/>
+                <Route path={content.links.home} Component={Home}/>
+                <Route path={content.links.about} Component={About}/>
+                <Route path={content.links.new} Component={New}/>
+                <Route path={content.links.upcoming} Component={Upcoming}/>
+                <Route path={content.links.classics} Component={Classics}/>
+                <Route path={content.links.impressum} Component={Impressum}/>
             </Routes>
         </div>
     )

@@ -16,7 +16,7 @@ function About() {
 
     return (
         <div>
-            <Navbar site={"/about"}/>
+            <Navbar site={content.links.about}/>
             <main style={styles.main} className="aboutMain">
                 <div className="about--wrapper">
                     <h1>{content.about.aboutUsSection.sectionTitle}</h1>

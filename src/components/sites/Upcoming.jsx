@@ -2,11 +2,12 @@ import React from "react";
 import Navbar from "../Navbar";
 import MovieCards from "../MovieCards";
 import Footer from "../Footer";
+import content from "../../../content";
 
 function Upcoming() {
     return (
         <>
-            <Navbar site={"/upcoming"}/>
+            <Navbar site={content.links.upcoming}/>
             <h1 className="upcomingMoviesTitle">Upcoming Movies</h1>
             <MovieCards 
                 sortBy={"popularity.desc"}

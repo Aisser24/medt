@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import MovieCards from "../MovieCards";
+import content from "../../../content";
 
 
 function Classics() {
@@ -9,7 +10,7 @@ function Classics() {
 
     return (
         <>
-            <Navbar site={"/new-movies"}/>
+            <Navbar site={content.links.new}/>
             <h1 className="newMoviesTitle">New Movies</h1>
             <MovieCards 
                 sortBy={"primary_release_date.desc"} 

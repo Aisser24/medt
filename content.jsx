@@ -1,24 +1,25 @@
 const content = {
+
     navbar: {
         links: [
             {
-                target: "/medt/",
+                target: "/",
                 text: "Home"
             },
             {
-                target: "/medt/about",
+                target: "/about",
                 text: "About"
             },
             {
-                target: "/medt/new-movies",
+                target: "/new-movies",
                 text: "New Movies"
             },
             {
-                target: "/medt/upcoming",
+                target: "/upcoming",
                 text: "Upcoming"
             },
             {
-                target: "/medt/classics",
+                target: "/classics",
                 text: "Classics"
             }
         ],

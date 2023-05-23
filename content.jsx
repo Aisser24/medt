@@ -82,19 +82,19 @@ const content = {
         heroSection: [
             {
                 title: "New Movies",
-                target: "/new-movies",
+                target: "/medt/new-movies",
                 image: "https://image.tmdb.org/t/p/original/aAgGrfBwna1nO4M2USxwFgK5O0t.jpg",
                 alt: "comming"
             },
             {
                 title: "Upcoming",
-                target: "/upcoming",
+                target: "/medt/upcoming",
                 image: "https://image.tmdb.org/t/p/original/j0xO6355h5HfvC425sWDT6tiBZM.jpg",
                 alt: "comming"
             },
             {
                 title: "Classics",
-                target: "/classics",
+                target: "/medt/classics",
                 image: "https://image.tmdb.org/t/p/original/fMkfImQS9ZRRQbsKfeORnpyLMNL.jpg",
                 alt: "comming"
             }

@@ -104,7 +104,7 @@ const content = {
             title: "About Us",
             content: "Welcome to MovieInfo! We are passionate movie enthusiasts dedicated to providing you with comprehensive and up-to-date information about films. Whether you're a casual moviegoer or a die-hard cinephile, our website is designed to be your go-to resource for all things related to ...",
             buttonText: "Read More",
-            buttonTarget: "/medt/contact"
+            buttonTarget: "/medt/about"
         },
 
         contactSection: {

@@ -1,0 +1,475 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #2F82FF;
+  --background:  #1E1E1E;
+  --secondary-background: #2B2B2B;
+  --subtitle-color: #2F2E41;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: white;
+}
+
+/*#region Navbar*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--secondary-background);
+  color: white;
+}
+
+header .desktop--ul {
+  display: none;
+  gap: 1rem;
+}
+
+.hamburger--links {
+  position: absolute;
+  background-color: black;
+  padding: 2em;
+  right: 0px;
+  top: 70px;
+  font-size: 1.2em;
+  z-index: 100000000000;
+}
+
+@media (min-width: 768px) {
+  header .desktop--ul {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+/* #endregion */
+
+/*#region Hero*/
+.slider--container img{
+}
+
+.slider--header {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 10vw;
+  font-weight: bolder;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* .darken {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: black;
+  z-index: 100000;
+  opacity: .5;
+} */
+/* #endregion */
+
+/*#region About*/
+.about-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2em;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.about-section h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: .2em;
+}
+
+.about--btn, .btn {
+  background-color: var(--primary);
+  color: white;
+  display: inline-block;
+  padding: .5em 1em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: .5em;
+}
+/* #endregion */
+
+/*#region Form*/
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3em;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-bottom: 2em;
+  color: black;
+}
+
+.contact legend {
+  color: white;
+}
+
+
+form {
+  width: 30vw;
+}
+
+legend {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+  font-weight: bold;
+}
+
+input, textarea {
+  border-radius: 10px;
+  padding: .6em;
+  margin-top: .5em;
+  width: 100%;
+}
+
+input {
+  height: 40px;
+}
+
+@media (max-width: 1200px) {
+  .svg {
+    display: none;
+  }
+
+  form {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 750px) {
+  form {
+    width: 80vw;
+  }
+}
+/* #endregion */
+
+/*#region Footer*/
+footer {
+  background-color: var(--secondary-background);
+  display: flex;
+  justify-content: center;
+  padding: 1em 2em;
+  font-size: 1.2vmax;
+}
+
+.footerLink:hover {
+  color: var(--primary);
+}
+
+
+/*#endregion*/
+
+/*#region AboutUsSite*/
+  .aboutMain {
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 2em;
+    position: relative;
+  }
+
+  .about--wrapper {
+    max-width: 80%;
+    border-radius: .8em;
+    padding: 2em;
+  }
+
+  .about--wrapper h1 {
+    font-size: 2.4em;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .aboutText {
+    column-count: 2;
+  }
+
+  @media (max-width: 900px) {
+    .aboutText {
+      column-count: 1;
+    }
+  }
+
+/*#endregion*/
+
+/*#region Movie*/
+.movie {
+  display: flex;
+  flex-direction: column;
+  max-width: 20em;
+  height: 29em;
+  border-radius: 1.3em;
+  overflow: hidden;
+  cursor: pointer;
+  min-width: 320px;
+}
+
+.image {
+  position: relative;
+  height: 80%;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4em;
+  position: absolute;
+  bottom: 0;
+  padding: 0 0 .4em .4em;
+}
+
+.date {
+  background-color: white;
+  display: inline-block;
+  color: var(--subtitle-color);
+  padding: .2em .8em;
+  border-radius: 100em;
+  position: absolute;
+  right: 0;
+  margin: .4em .4em 0 0;
+}
+
+.genre {
+  display: inline-block;
+  padding: .2em .8em;
+  border-radius: 100em;
+}
+
+.description {
+  display: flex;
+  background-color: #2B2B2B;
+  align-items: center;
+  padding: .8rem;
+  min-height: 94px;
+  justify-content: space-between;
+  gap: .4em;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.title p {
+  color: #D1D1D1;
+  font-size: .8em;
+}
+
+.rating {
+  display: flex;
+  gap: .4em;
+  align-items: center;
+  font-size: .9em;
+  font-weight: 500;
+}
+
+
+/*#endregion*/
+
+/*#region Movie Details*/
+.detailsContainer {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  display: flex;
+  align-items: center;
+  gap: .4em;
+  cursor: pointer;
+}
+
+.detailsWrapper {
+  width: 80%;
+  display: flex;
+  gap: 2em;
+  max-width: 800px;
+}
+
+.detailsWrapper img {
+  max-width: 25vw;
+  border-radius: 1em;
+}
+
+.detailsText {
+  display: flex;
+  flex-direction: column;gap: 1em;
+}
+
+.detailsTitle {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.detailsMainTitle h1{
+  font-size: 1.8em;
+}
+
+.detailsMainTitle p {
+  font-size: .8em;
+  color: #A0A0A0;
+}
+
+.detailsMeta {
+  font-size: .8em;
+  align-self: flex-end;
+  color: #A0A0A0;
+}
+
+.detailsGenres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4em;
+}
+
+@media (max-width: 750px) {
+  .detailsWrapper img {
+    display: none;
+  }
+
+  .detailsTitle {
+    flex-direction: column;
+    gap: .5em;
+  }
+
+  .detailsMeta {
+    align-self: flex-start;
+  }
+
+  /* .back {
+    left: 15vw;
+  } */
+}
+/*#endregion*/
+
+/*#region Movies section*/
+.mainMoviesContent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.movies-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prevBtn, .nextBtn {
+  background-color: var(--primary);
+  padding: .2em .4em;
+  display: block;
+  font-size: 1.3em;
+  border-radius: .4em;
+}
+
+.pageSwitchers {
+  display: flex;
+  align-items: center;
+  gap: .8em;
+  margin: .8em;
+}
+
+/*#endregion*/
+
+/*#region NewMovies*/
+.newMoviesTitle, .upcomingMoviesTitle, .classicMoviesTitle {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  margin: 1em;
+}
+/*#endregion*/
+
+/*#region Impressum*/
+.imprWrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 4em;
+}
+
+.privacy-policy, .tos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.mainWrapper h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.mainWrapper h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.mainWrapper ul, .mainWrapper ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5em;
+}
+
+@media (max-width: 800px) {
+  .imprWrapper {
+    width: 90%;
+  }
+}
+/*#endregion*/

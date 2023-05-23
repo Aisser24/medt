@@ -12,12 +12,12 @@ function App() {
     return (
         <div className="App">
             <Routes>
-                <Route path="/" Component={Home}/>
-                <Route path="/about" Component={About}/>
-                <Route path="/new-movies" Component={New}/>
-                <Route path="/upcoming" Component={Upcoming}/>
-                <Route path="/classics" Component={Classics}/>
-                <Route path="/impressum" Component={Impressum}/>
+                <Route path="/medt/" Component={Home}/>
+                <Route path="/medt/about" Component={About}/>
+                <Route path="/medt/new-movies" Component={New}/>
+                <Route path="/medt/upcoming" Component={Upcoming}/>
+                <Route path="/medt/classics" Component={Classics}/>
+                <Route path="/medt/impressum" Component={Impressum}/>
             </Routes>
         </div>
     )

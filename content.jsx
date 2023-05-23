@@ -2,23 +2,23 @@ const content = {
     navbar: {
         links: [
             {
-                target: "/",
+                target: "/medt/",
                 text: "Home"
             },
             {
-                target: "/about",
+                target: "/medt/about",
                 text: "About"
             },
             {
-                target: "/new-movies",
+                target: "/medt/new-movies",
                 text: "New Movies"
             },
             {
-                target: "/upcoming",
+                target: "/medt/upcoming",
                 text: "Upcoming"
             },
             {
-                target: "/classics",
+                target: "/medt/classics",
                 text: "Classics"
             }
         ],
@@ -55,15 +55,15 @@ const content = {
         footerLinks: [
             {
                 title: "Privacy Policy",
-                to: "/impressum#privacy-policy"
+                to: "/medt/impressum#privacy-policy"
             },
             {
                 title: "Terms Of Service",
-                to: "/impressum#tos"
+                to: "/medt/impressum#tos"
             },
             {
                 title: "Contact Us",
-                to: "/#contact"
+                to: "/medt/#contact"
             }
         ]
     },

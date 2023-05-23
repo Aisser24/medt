@@ -14,10 +14,10 @@ function App() {
             <Routes>
                 <Route path="/medt/" Component={Home}/>
                 <Route path="/medt/about" Component={About}/>
-                <Route path="/new-movies" Component={New}/>
-                <Route path="/upcoming" Component={Upcoming}/>
-                <Route path="/classics" Component={Classics}/>
-                <Route path="/impressum" Component={Impressum}/>
+                <Route path="/medt/new-movies" Component={New}/>
+                <Route path="/medt/upcoming" Component={Upcoming}/>
+                <Route path="/medt/classics" Component={Classics}/>
+                <Route path="/medt/impressum" Component={Impressum}/>
             </Routes>
         </div>
     )

@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
   background-color: var(--background);
   color: white;
+  min-height: 100vh;
 }
 
 /*#region Navbar*/
@@ -429,7 +430,7 @@ footer {
 /*#endregion*/
 
 /*#region NewMovies*/
-.newMoviesTitle, .upcomingMoviesTitle, .classicMoviesTitle {
+.newMoviesTitle, .upcomingMoviesTitle, .classicMoviesTitle, .imprintHeading {
   font-size: 3em;
   font-weight: 600;
   text-align: center;

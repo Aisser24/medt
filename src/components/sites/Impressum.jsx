@@ -10,6 +10,7 @@ function Impressum() {
             <Navbar />
                 <div className="mainWrapper">
                     <div className="imprWrapper">
+                        <h1 className="imprintHeading">Imprint</h1>
                         <section className="owner">
                             {
                                 content.impressum.owner

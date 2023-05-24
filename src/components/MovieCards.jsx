@@ -70,13 +70,13 @@ function MovieCards({
                 currentMovie === null &&
                 <section className="movies-section">
                     <div className="mainMoviesContent">
-                        {
-                            movies.map((movie, index) => {
-                                return (
-                                    <Movie response={movie} handleClick={handleClick} key={nanoid()}/>
-                                )
-                            })
-                        }
+                            {
+                                movies.map((movie, index) => {
+                                    return (
+                                        <Movie response={movie} handleClick={handleClick} key={nanoid()}/>
+                                    )
+                                })
+                            }
                     </div>
                     <div className="pageSwitchers">
                         <button onClick={() => changePage(false)} className="prevBtn">Prev.</button>

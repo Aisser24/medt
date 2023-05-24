@@ -89,7 +89,7 @@ const content = {
             {
                 title: "Upcoming",
                 target: "/medt/upcoming",
-                image: "https://image.tmdb.org/t/p/original/9dZ52zOs91RMgjjORoMIi6VGNLr.jpg",
+                image: "https://image.tmdb.org/t/p/original/xcXALwBjdHIjrESpGVhghqj8fGT.jpg",
                 alt: "comming"
             },
             {
